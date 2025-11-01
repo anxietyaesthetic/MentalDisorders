@@ -1,0 +1,86 @@
+/* redesigned styles.css - modern, minimal */
+:root{
+  --accent: #0ea5a4;
+  --bg: #ffffff;
+  --card: #47cba8ff;
+  --text: #7e1a9b;
+  --muted: #7e1a9b;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, -apple-system, PixelGame-R9AZe , sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height: auto;
+}
+.container{max-width:980px;margin:36px auto;padding:0 20px;}
+header.site-header{display:flex;align-items:center;justify-content:space-between;padding:24px 0;}
+.site-title{font-size:1.25rem;font-weight:700;letter-spacing:0.2px;}
+nav a{color:var(--muted);text-decoration:none;margin-left:0;font-weight:600;}
+.hero{background:linear-gradient(180deg, rgba(14,165,164,0.08), transparent);padding:28px;border-radius:12px;display:flex;gap:20px;align-items:center;}
+.avatar{width:auto;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px;}
+.hero .meta{flex:1}
+.section{background-color: var(--bg);margin-top:22px;background:var(--card);padding:20px;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.06);}
+.section h2{margin:0 0 10px 0;font-size:1.1rem}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;}
+.card{background:#fbfdff;padding:14px;border-radius:8px;border:1px solid rgba(15,23,42,0.03);}
+.card h3{margin:0 0 8px 0;font-size:1rem;}
+.card p{margin:0;font-size:0.9rem;color:var(--muted);}
+.button{width: auto; border: 2px solid rgba(255,255,255,0.447); backdrop-filter: blur(11px); display:inline-block;padding:30px 40px;border-radius:12px;background:#0b74ff;color:#fff;text-decoration:none;font-weight:600;margin-top:10px;}
+.contact-form{display:flex;flex-direction:column;gap:8px;}
+.input, textarea{padding:10px;border-radius:8px;border:1px solid #e6eef0;font-size:0.95rem}
+footer{margin:28px 0;text-align:center;color:var(--muted);font-size:0.9rem}
+@media (max-width:600px){.hero{flex-direction:column;align-items:flex-start}.site-title{font-size:1rem}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mental.css">
+    <title>My Mental Disorders & Symptoms</title>
+    
+    </head>
+<body style="background-color: lightslategray">
+    <div class="container">
+        
+    <header class="site-header">
+        <div class="site-title">Mental Disorders Diagnosed & Symptoms</div>
+        <h1 style="align-content: center">Welcome to My Mind</h1>
+        <nav>
+            
+                <a href="#aboutme">Me!</a>
+                <a href="#disorders">Disorders</a>
+                <a href="#symptoms">Symptoms</a>
+            
+    </nav>
+</header>
+    <section class="hero section" id="aboutme"> 
+        <div class="avatar">Jeriel</div>
+        <h2 style="font-size: xx-large">About Me!</h2>
+        <p>Hi! My name is Jeriel, a Puerto Rican, who is a Master's Network Security Student at InterAmerican University of Puerto Rico, Guayama Campus. Also, I am a Mental-Patient who has lived with a variety of disorders most of my life. But I learned to live with them thanks to therapy and the appropiate medication.</p>
+        </section>
+    <section class="section" id="disorders">
+        <h2 style="font-size: xx-large;">My Diagnosis of Disorders</h2>
+    <p>My Diagnosis up  to now are:</p>
+        <ul>~Anxiety</ul>
+        <ul>~Paranoid Schizophrenia</ul>
+        <ul>~Socal Anxiety</ul>
+    </section>
+    <section class="section" id="symptoms">
+        <h2 style="font-size: xx-large">My Personal Symptoms of Each Disorders</h2>
+        <p>For the Anxiety Disorder, I can be irritable, experience muscle tensions, heart palpitations, be short of breath, stomach problems & nauseas.</p>
+        <p>For the Paranoid Schizophrenia, I can experience delusions, and at the same time hallucinations. And in worst cases, I can avoid friends and family, lose motivation to socialize and, most of the time, reduce emotional expression.</p>
+        <p>And for Social Anxiety, I always feared of being judged, be self-concerned, worry about every action I make, I avoid a lot of social interaction, and have a hard time interacting.</p>
+        
+    </section>
+        <section class="section">
+            <h2 style="font-size: xx-large">Social Medias you can follow!</h2>
+        <div style="margin-top:12px">
+          <a class="button" href="https://www.youtube.com/@g0th1c.anx13ty">YouTube</a>
+          <a class="button" href="https://www.instagram.com/g0th1c.anx13ty/">Instagram</a>
+        </div>
+            </section>
+    </div>
+    </body>
+</html>
